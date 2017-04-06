@@ -20,6 +20,10 @@
 	box-shadow: inset 0px 0px 25px #aaaaaa;
 }
 
+.top-shadow-header {
+	box-shadow: inset 0px 0px 25px #20587C;
+}
+
 .card {
 	background-color: #aaaaaa;
 	border: 1px solid;

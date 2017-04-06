@@ -1,4 +1,4 @@
- "bootstrapGrid": {
+   "bootstrapGrid": {
 	"panels": {
 		"layout": {
 			"repeat": {
@@ -116,7 +116,6 @@
 		"weight": "bold"
 	},
 	"spending": {
-		"repeat": 2,
 		"title": {
 			"content": "Total Travel Spending",
 			"textSize": "16px",
