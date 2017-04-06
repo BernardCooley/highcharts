@@ -2,8 +2,9 @@ import { DashboardService } from 'services/addDashboard.service';
 import { element } from 'protractor';
 import { DisplayDashboardService } from './../../services/showDashboard.service';
 import { DashboardCardComponent } from 'app/dashboard-card/dashboard-card.component';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Directive, Input } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { SpendWidgetComponent } from 'app/spend/spend.component';
 
 
 @Component({
@@ -26,6 +27,7 @@ export class DashboardPageComponent implements OnInit {
 	panel4Widget1: String;
 	panel1Repeat: Array<number> = [];
 	panel2Repeat: Array<number> = [];
+	panel21Repeat: Array<number> = [];
 	panel3Repeat: Array<number> = [];
 	panel4Repeat: Array<number> = [];
 	panel5Repeat: Array<number> = [];
@@ -41,6 +43,7 @@ export class DashboardPageComponent implements OnInit {
 		
 		this.panel1Repeat = this.getpanel1RepeatArray(this.jsonData.bootstrapGrid.panels.layout.repeat.panel1);
 		this.panel2Repeat = this.getpanel2RepeatArray(this.jsonData.bootstrapGrid.panels.layout.repeat.panel2);
+		this.panel21Repeat = this.getpanel21RepeatArray(this.jsonData.bootstrapGrid.panels.layout.repeat.panel21);
 		this.panel3Repeat = this.getpanel3RepeatArray(this.jsonData.bootstrapGrid.panels.layout.repeat.panel3);
 		this.panel4Repeat = this.getpanel4RepeatArray(this.jsonData.bootstrapGrid.panels.layout.repeat.panel4);
 		this.panel5Repeat = this.getpanel5RepeatArray(this.jsonData.bootstrapGrid.panels.layout.repeat.panel5);
@@ -63,6 +66,13 @@ export class DashboardPageComponent implements OnInit {
 			this.panel2Repeat.push(i);
 		}
 		return this.panel2Repeat;
+	}
+
+	getpanel21RepeatArray(repeatNumber: number) {
+		for (var i = 0; i < repeatNumber; i++) {
+			this.panel21Repeat.push(i);
+		}
+		return this.panel21Repeat;
 	}
 
 	getpanel3RepeatArray(repeatNumber: number) {

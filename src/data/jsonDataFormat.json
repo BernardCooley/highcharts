@@ -3,7 +3,8 @@
 		"layout": {
 			"repeat": {
 				"panel1": 2,
-				"panel2": 4,
+				"panel2": 3,
+				"panel21": 1,
 				"panel3": 5,
 				"panel4": 4,
 				"panel5": 2
@@ -24,7 +25,6 @@
 				"id": "col-lg-2 col-md-2 col-sm-2 col-xs-2"
 			},
 			"panel1": {
-				"widget": "hotel",
 				"container": "col-lg-12 col-md-12 col-sm-12 col-xs-12",
 				"spendSaving": {
 					"outer": "col-lg-3 col-md-3 col-sm-3 col-xs-3",
@@ -167,6 +167,51 @@
 		"year2": {
 			"title": {
 				"content": "• 2015",
+				"textSize": "9.5px",
+				"textColor": "#275D80"
+			},
+			"value": {
+				"content": "$178,585",
+				"textSize": "21.6px",
+				"textColor": "#275D80"
+			}
+		}
+	},
+	"spend1": {
+		"title": {
+			"content": "Air Spend Data 2",
+			"textSize": "16px",
+			"textColor": "#4A4A4A",
+			"width": "45%"
+		},
+		"missedOpportunities": {
+			"title": {
+				"content": "Missed Opportunities",
+				"textSize": "10px",
+				"textColor": "#00AEEF",
+				"weight": "bold"
+			},
+			"value": {
+				"content": "$47,236",
+				"textSize": "22px",
+				"textColor": "#00AEEF"
+			}
+		},
+		"year1": {
+			"title": {
+				"content": "• 2014",
+				"textSize": "9.5px",
+				"textColor": "#00AEEF"
+			},
+			"value": {
+				"content": "$160,424",
+				"textSize": "21.6px",
+				"textColor": "#00AEEF"
+			}
+		},
+		"year2": {
+			"title": {
+				"content": "• 2013",
 				"textSize": "9.5px",
 				"textColor": "#275D80"
 			},

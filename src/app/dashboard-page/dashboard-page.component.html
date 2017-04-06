@@ -11,7 +11,7 @@
 			<div class="container {{jsonData.bootstrapGrid.panels.layout.panel1.spendSaving.inner}}" *ngFor="let num of panel1Repeat">
 				<br>
 				<div *ngIf="panel1Widget1 == 'spendSave'"><app-spending-saving>Loading...</app-spending-saving></div>
-				<div *ngIf="panel1Widget1 == 'spend'"><app-spend>Loading...</app-spend></div>
+				<div *ngIf="panel1Widget1 == 'spend'"><app-spend textDisplay="textDisplay">Loading...</app-spend></div>
 				<div *ngIf="panel1Widget1 == 'compliance'"><app-compliance-graph>Loading...</app-compliance-graph></div>
 				<div *ngIf="panel1Widget1 == 'target'"><app-target-graph>Loading...</app-target-graph></div>
 				<div *ngIf="panel1Widget1 == 'hotel'"><app-hotel-summary-graph>Loading...</app-hotel-summary-graph></div>
@@ -24,12 +24,17 @@
 			<div class="container {{jsonData.bootstrapGrid.panels.layout.panel1.spend.inner}}" *ngFor="let num of panel2Repeat">
 				<br>
 				<div *ngIf="panel1Widget2 == 'spendSave'"><app-spending-saving>Loading...</app-spending-saving></div>
-				<div *ngIf="panel1Widget2 == 'spend'"><app-spend>Loading...</app-spend></div>
+				<div *ngIf="panel1Widget2 == 'spend'"><app-spend spendTitle="{{jsonData.elements.spend.title.content}}" year1="{{jsonData.elements.spend.year1.title.content}}" year2="{{jsonData.elements.spend.year2.title.content}}">Loading...</app-spend></div>
 				<div *ngIf="panel1Widget2 == 'compliance'"><app-compliance-graph>Loading...</app-compliance-graph></div>
 				<div *ngIf="panel1Widget2 == 'target'"><app-target-graph>Loading...</app-target-graph></div>
 				<div *ngIf="panel1Widget2 == 'hotel'"><app-hotel-summary-graph>Loading...</app-hotel-summary-graph></div>
 				<div *ngIf="panel1Widget2 == 'trips'"><app-purpose-of-trips>Loading...</app-purpose-of-trips></div>
 				<div *ngIf="panel1Widget2 == 'periodic'"><app-periodic-demand-graph>Loading...</app-periodic-demand-graph></div>
+			</div>
+			
+			<div class="container {{jsonData.bootstrapGrid.panels.layout.panel1.spend.inner}}" *ngFor="let num of panel21Repeat">
+				<br>
+				<div *ngIf="panel1Widget2 == 'spend'"><app-spend spendTitle="{{jsonData.elements.spend1.title.content}}" year1="{{jsonData.elements.spend1.year1.title.content}}" year2="{{jsonData.elements.spend1.year2.title.content}}">Loading...</app-spend></div>
 			</div>
 		</div>
 	</div>
