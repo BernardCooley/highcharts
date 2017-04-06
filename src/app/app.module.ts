@@ -27,6 +27,7 @@ import { MdInput } from '@angular2-material/input/input';
 import { IndexPageComponent } from './index-page/index-page.component';
 import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
 import { DashboardService } from 'services/addDashboard.service';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { DashboardService } from 'services/addDashboard.service';
     IndexPageComponent,
     DashboardPageComponent,
     routingComponents,
+    HeaderComponent,
   ],
   imports: [
     AppRoutingModule,

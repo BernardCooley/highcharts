@@ -5,9 +5,9 @@ import { LayoutComponent } from "app/layout/layout.component";
 import { DashboardCardComponent } from './dashboard-card/dashboard-card.component';
 
 const routes: Routes = [
-    { path: '', pathMatch: 'full', redirectTo: 'dashboardindex' },
+    { path: '', component: AddDashboardComponent },
     { path: 'dashboard', component:  LayoutComponent },
-    { path: 'addDashboard', component: AddDashboardComponent, data : {some_data : 'some value'} },
+    { path: 'addDashboard', component: AddDashboardComponent },
     { path: 'dashboardIndex', component: DashboardCardComponent }
 ];
 

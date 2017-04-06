@@ -29,6 +29,8 @@ export class DashboardPageComponent implements OnInit {
 	panel3Repeat: Array<number> = [];
 	panel4Repeat: Array<number> = [];
 	panel5Repeat: Array<number> = [];
+	dashboardTitle: String;
+	dashboardID: String;
 	
 
 	constructor(displayDashboardService: DisplayDashboardService, dashboardService: DashboardService, r: Router) {
@@ -36,6 +38,7 @@ export class DashboardPageComponent implements OnInit {
 		this.getDashboardArray(dashboardService);
 		this.dashboardArray = this.dashboardArray;
 		this.jsonData = this.displayCorrectDashboard(this.dashboardArray, this.getCurrentDashboardID(displayDashboardService));
+		
 		this.panel1Repeat = this.getpanel1RepeatArray(this.jsonData.bootstrapGrid.panels.layout.repeat.panel1);
 		this.panel2Repeat = this.getpanel2RepeatArray(this.jsonData.bootstrapGrid.panels.layout.repeat.panel2);
 		this.panel3Repeat = this.getpanel3RepeatArray(this.jsonData.bootstrapGrid.panels.layout.repeat.panel3);
@@ -45,7 +48,7 @@ export class DashboardPageComponent implements OnInit {
 		this.panel1Widget1 = this.getPanel1Widget1();
 		this.panel1Widget2 = this.getPanel1Widget2();
 		this.panel4Widget1 = this.getPanel4Widget1();
-		
+		this.currentDashboardID = this.getCurrentDashboardID(displayDashboardService);
 	}
 
 	getpanel1RepeatArray(repeatNumber: number) {
@@ -101,6 +104,7 @@ export class DashboardPageComponent implements OnInit {
 
 	getCurrentDashboardID(displayDashboardService: DisplayDashboardService) {
 		this.currentDashboardID = displayDashboardService.getCurrentDashboardIDSer();
+		console.log(this.currentDashboardID + "fbgfdsgvbfsd");
 		return this.currentDashboardID;
 	}
 

@@ -11,7 +11,6 @@ export class DisplayDashboardService {
     currentDashboardJson: JSON;
 
 	constructor() {
-        
     }
 
     getIDInputSer(dashboardID: String) {

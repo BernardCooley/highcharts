@@ -655,7 +655,7 @@
 			"title": {
 				"text": "Savings<br>$25.2",
 				"style": {
-					"fontSize": "20px",
+					"fontSize": "16px",
 					"color": "#00AEEF",
 					"fontWeight": "bold"
 				},
@@ -766,28 +766,34 @@
 					"colorByPoint": true,
 					"data": [
 						{
+							"color": "#00AEEF",
 							"name": "External Supplier",
 							"y": 56.33
 						},
 						{
+							"color": "#01B3F2",
 							"name": "Internal Abbott",
 							"y": 24.03,
 							"sliced": true,
 							"selected": true
 						},
 						{
+							"color": "#46B7D2",
 							"name": "Conference",
 							"y": 10.38
 						},
 						{
+							"color": "#26888A",
 							"name": "External Customer",
 							"y": 4.77
 						},
 						{
+							"color": "#46B7D2",
 							"name": "External Customer",
 							"y": 0.91
 						},
 						{
+							"color": "#74BCBA",
 							"name": "Training",
 							"y": 0.2
 						}
