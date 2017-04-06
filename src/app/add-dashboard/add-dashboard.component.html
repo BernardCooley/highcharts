@@ -1,0 +1,28 @@
+<div>
+	<md-card class="demo-card demo-basic" style="width: 500px">
+		<md-toolbar color="primary">Add New Dashboard</md-toolbar>
+		<md-card-content>
+			<form>
+				<table style="width: 100%" cellspacing="0">
+					<tr>
+						<td><md-input name="title" id="title" [(ngModel)]="title" placeholder="Dashboard name" style="width: 100%"></md-input></td>
+					</tr>
+					<tr>
+						<td><md-input name="id" id="id" [(ngModel)]="id" placeholder="ID" style="width: 100%"></md-input></td>
+					</tr>
+					<tr>
+						<td><md-input name="description" id="description" [(ngModel)]="description" placeholder="Description" style="width: 100%"></md-input></td>
+					</tr>
+					<tr>
+						<td><textarea name="json" id="json" [(ngModel)]="json" placeholder="JSON" style="width: 100%" rows="5"></textarea></td>
+					</tr>
+					<tr>
+						<td><button md-button class="md-raised" (click)="addNewDashboard()">Submit</button></td>
+					</tr>
+					
+				</table>
+			</form>
+		</md-card-content>
+	</md-card>
+</div>
+

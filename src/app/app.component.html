@@ -1,0 +1,17 @@
+<div class="container-fluid container mainContainer {{jsonData.bootstrapGrid.panels.layout.bodyContainer}}" style="font-family: 'Lato'; width: 100%">
+    <div class="row" [style.height]=jsonData.elements.layout.header.height>
+	<div class="{{jsonData.bootstrapGrid.panels.layout.header.image}}"><button class="homeButton" (click)="redirect()"><img src="../../assets/images/dashboard-logo.png"></button></div>
+	<!--<div class="{{jsonData.bootstrapGrid.panels.layout.header.image}}"><a href="redirect()"><img src="../../assets/images/dashboard-logo.png"></a></div>-->
+	<div class="{{jsonData.bootstrapGrid.panels.layout.header.title}}" [style.height]=jsonData.elements.layout.header.titleId.height [style.font-size]=jsonData.elements.layout.header.titleId.textSize [style.text-align]=jsonData.elements.layout.header.title.textAlign [style.line-height]=jsonData.elements.layout.header.titleId.lineHeight [style.color]=jsonData.elements.layout.header.titleId.color>{{jsonData.title}}</div>
+	<div class="{{jsonData.bootstrapGrid.panels.layout.header.id}}" [style.height]=jsonData.elements.layout.header.titleId.height [style.font-size]=jsonData.elements.layout.header.titleId.textSize [style.text-align]=jsonData.elements.layout.header.id.textAlign [style.line-height]=jsonData.elements.layout.header.titleId.lineHeight [style.color]=jsonData.elements.layout.header.titleId.color>{{jsonData.id}}</div>
+</div>
+<br>
+    
+    <header>
+        <nav>
+        <!--<a routerLink="/addDashboard" routerLinkActive="active">Add New Dashboard</a>-->
+    </nav>
+    
+    </header>
+    <router-outlet></router-outlet>
+</div>

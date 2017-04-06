@@ -1,0 +1,30 @@
+<div class="{{jsonData.bootstrapGrid.panels.managementSummary.container}} container" style="background-color: white; margin: 5px">
+  <div class="{{jsonData.bootstrapGrid.panels.managementSummary.detailsContainer}} container">
+  <br>
+    <div class="row" [style.font-size]=jsonData.elements.hotelSummary.title.textSize [style.color]=jsonData.elements.hotelSummary.title.textColor [style.font-weight]=jsonData.elements.globalStyles.weight>
+      {{jsonData.elements.hotelSummary.title.content}}
+    </div>
+      <div class="row" [style.font-size]=jsonData.elements.hotelSummary.nights.title.textSize [style.color]=jsonData.elements.hotelSummary.nights.title.textColor>
+        {{jsonData.elements.hotelSummary.nights.title.content}}
+      </div>
+      <div class="row" [style.font-size]=jsonData.elements.hotelSummary.nights.value.textSize [style.color]=jsonData.elements.hotelSummary.nights.value.textColor [style.font-weight]=jsonData.elements.globalStyles.weight>
+        {{jsonData.elements.hotelSummary.nights.value.content}}
+      </div>
+      <div class="row" [style.font-size]=jsonData.elements.hotelSummary.dailyRate.title.textSize [style.color]=jsonData.elements.hotelSummary.dailyRate.title.textColor>
+        {{jsonData.elements.hotelSummary.dailyRate.title.content}}
+      </div>
+      <div class="row" [style.font-size]=jsonData.elements.hotelSummary.dailyRate.value.textSize [style.color]=jsonData.elements.hotelSummary.dailyRate.value.textColor [style.font-weight]=jsonData.elements.globalStyles.weight>
+        {{jsonData.elements.hotelSummary.dailyRate.value.content}}
+      </div>
+    <br>
+  </div>
+  <div class="{{jsonData.bootstrapGrid.panels.managementSummary.widget}}">
+    		<div *ngIf="panel3Widget1 == 'spendSave'"><app-spending-saving>Loading...</app-spending-saving></div>
+				<div *ngIf="panel3Widget1 == 'spend'"><app-spend>Loading...</app-spend></div>
+				<div *ngIf="panel3Widget1 == 'compliance'"><app-compliance-graph>Loading...</app-compliance-graph></div>
+				<div *ngIf="panel3Widget1 == 'target'"><app-target-graph>Loading...</app-target-graph></div>
+				<div *ngIf="panel3Widget1 == 'hotel'"><app-hotel-summary-graph>Loading...</app-hotel-summary-graph></div>
+				<div *ngIf="panel3Widget1 == 'trips'"><app-purpose-of-trips>Loading...</app-purpose-of-trips></div>
+				<div *ngIf="panel3Widget1 == 'periodic'"><app-periodic-demand-graph>Loading...</app-periodic-demand-graph></div>
+  </div>
+</div>

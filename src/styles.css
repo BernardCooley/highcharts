@@ -1,0 +1,55 @@
+/*.container {
+	border: 1px solid;
+	max-height: 500px;
+}*/
+
+.border {
+	border: 1px solid;
+	max-height: 500px;
+}
+
+.mainContainer {
+	width: 95%;
+}
+
+.vertivalAlign {
+	vertical-align: middle;
+}
+
+.top-shadow {
+	box-shadow: inset 0px 0px 25px #aaaaaa;
+}
+
+.card {
+	background-color: #aaaaaa;
+	border: 1px solid;
+	margin: 15px;
+	height: 200px;
+	width: 500px;
+}
+
+.sticky {
+    /*background-color: #c0c0c0;*/
+    position:fixed;
+    top:60px;
+    right: 0;
+    /*width:100%;*/
+    z-index:100;
+}
+
+.navButton {
+	position: fixed;
+    bottom: 0px;
+    right: 0px; 
+	background-color: #20587C;
+	color: white;
+	float: left;
+	height: 40px;
+}
+
+.homeButton {
+	padding: 0;
+	border: none;
+	background: none;
+	/*background-color: Transparent;*/
+}

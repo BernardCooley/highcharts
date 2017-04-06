@@ -1,0 +1,12 @@
+<md-card style="background-color: #EDEDED" class="card" *ngFor="let dashboard of dashboardArray">
+    <md-card-title>{{dashboard.title}}</md-card-title>
+    <md-card-subtitle>{{dashboard.id}}</md-card-subtitle>
+    <md-card-content>
+      <p>{{dashboard.description}}</p>
+    </md-card-content>
+    <md-card-actions>
+      <button class="navButton" style="color: #00AEEF" (click)="getCurrentDashboardID(dashboard.id)" md-button>VIEW</button>
+    </md-card-actions>
+    <br>
+</md-card>
+<button class="navButton" style="color: #00AEEF" routerLink="/addDashboard" routerLinkActive="active" md-button>Add New Dashboard</button>

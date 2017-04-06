@@ -1,0 +1,68 @@
+<div class="container {{jsonData.bootstrapGrid.panels.layout.panel1.container}} top-shadow">
+	<div class="row">
+		<div class="container {{jsonData.bootstrapGrid.panels.layout.panel1.spendSaving.outer}}" [style.height]=jsonData.elements.layout.panel1.height [style.background-color]=jsonData.elements.layout.panel1.backgroundColor>
+			<div class="container {{jsonData.bootstrapGrid.panels.layout.panel1.spendSaving.inner}}" *ngFor="let num of panel1Repeat">
+				<br>
+				<div *ngIf="panel1Widget1 == 'spendSave'"><app-spending-saving>Loading...</app-spending-saving></div>
+				<div *ngIf="panel1Widget1 == 'spend'"><app-spend>Loading...</app-spend></div>
+				<div *ngIf="panel1Widget1 == 'compliance'"><app-compliance-graph>Loading...</app-compliance-graph></div>
+				<div *ngIf="panel1Widget1 == 'target'"><app-target-graph>Loading...</app-target-graph></div>
+				<div *ngIf="panel1Widget1 == 'hotel'"><app-hotel-summary-graph>Loading...</app-hotel-summary-graph></div>
+				<div *ngIf="panel1Widget1 == 'trips'"><app-purpose-of-trips>Loading...</app-purpose-of-trips></div>
+				<div *ngIf="panel1Widget1 == 'periodic'"><app-periodic-demand-graph>Loading...</app-periodic-demand-graph></div>
+				<br>
+			</div>
+		</div>
+		<div class="container {{jsonData.bootstrapGrid.panels.layout.panel1.spend.outer}}">
+			<div class="container {{jsonData.bootstrapGrid.panels.layout.panel1.spend.inner}}" *ngFor="let num of panel2Repeat">
+				<br>
+				<div *ngIf="panel1Widget2 == 'spendSave'"><app-spending-saving>Loading...</app-spending-saving></div>
+				<div *ngIf="panel1Widget2 == 'spend'"><app-spend>Loading...</app-spend></div>
+				<div *ngIf="panel1Widget2 == 'compliance'"><app-compliance-graph>Loading...</app-compliance-graph></div>
+				<div *ngIf="panel1Widget2 == 'target'"><app-target-graph>Loading...</app-target-graph></div>
+				<div *ngIf="panel1Widget2 == 'hotel'"><app-hotel-summary-graph>Loading...</app-hotel-summary-graph></div>
+				<div *ngIf="panel1Widget2 == 'trips'"><app-purpose-of-trips>Loading...</app-purpose-of-trips></div>
+				<div *ngIf="panel1Widget2 == 'periodic'"><app-periodic-demand-graph>Loading...</app-periodic-demand-graph></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container {{jsonData.bootstrapGrid.panels.layout.panel2.container}}" [style.max-height]=jsonData.elements.layout.panel2.maxHeight [style.background-color]=jsonData.elements.layout.panel2.backgroundColor [style.margin-top]=jsonData.elements.layout.panel2.marginTop>
+	<br>
+	<div style="font-size: 20px">&emsp;Airfare Savings Opportunities & Hotel Guideline Compliance</div>
+	<br>
+	<div class="container {{jsonData.bootstrapGrid.panels.layout.panel2.compliance}}" *ngFor="let num of panel3Repeat">
+		<app-compliance>Loading...</app-compliance>
+	</div>
+</div>
+
+<div class="container {{jsonData.bootstrapGrid.panels.layout.panel3.container}}" [style.max-height]=jsonData.elements.layout.panel3.maxHeight [style.background-color]=jsonData.elements.layout.panel3.backgroundColor [style.margin-top]=jsonData.elements.layout.panel3.marginTop>
+	<br>
+	<div class="row">
+		<div style="font-size: 20px">&emsp;Hotel Summary</div>
+		<br>
+		<div class="container {{jsonData.bootstrapGrid.panels.layout.panel3.hotelSummary}}" *ngFor="let num of panel4Repeat">
+			<app-hotel-summary>Loading...</app-hotel-summary>
+		</div>
+	</div>
+</div>
+
+<div class="container {{jsonData.bootstrapGrid.panels.layout.panel3.container}}" [style.max-height]=jsonData.elements.layout.panel3.maxHeight [style.background-color]=jsonData.elements.layout.panel3.backgroundColor>
+	<div class="row">
+		<div class="container {{jsonData.bootstrapGrid.panels.layout.panel3.widget}}">
+			<div *ngIf="panel4Widget1 == 'spendSave'"><app-spending-saving>Loading...</app-spending-saving></div>
+			<div *ngIf="panel4Widget1 == 'spend'"><app-spend>Loading...</app-spend></div>
+			<div *ngIf="panel4Widget1 == 'compliance'"><app-compliance-graph>Loading...</app-compliance-graph></div>
+			<div *ngIf="panel4Widget1 == 'target'"><app-target-graph>Loading...</app-target-graph></div>
+			<div *ngIf="panel4Widget1 == 'hotel'"><app-hotel-summary-graph>Loading...</app-hotel-summary-graph></div>
+			<div *ngIf="panel4Widget1 == 'trips'"><app-purpose-of-trips>Loading...</app-purpose-of-trips></div>
+			<div *ngIf="panel4Widget1 == 'periodic'"><app-periodic-demand-graph>Loading...</app-periodic-demand-graph></div>
+		</div>
+		<div class="container {{jsonData.bootstrapGrid.panels.layout.panel3.periodicDemand}}">
+			<div class="row" *ngFor="let num of panel5Repeat">
+				<app-periodic-demand>Loading...</app-periodic-demand>
+			</div>
+		</div>
+	</div>
+</div>

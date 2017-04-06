@@ -1,0 +1,18 @@
+<div class="row" [style.height]=jsonData.elements.layout.header.height>
+	<div class="{{jsonData.bootstrapGrid.panels.layout.header.image}}"><img src="../../assets/images/dashboard-logo.png"></div>
+	<div class="{{jsonData.bootstrapGrid.panels.layout.header.title}}" [style.height]=jsonData.elements.layout.header.titleId.height [style.font-size]=jsonData.elements.layout.header.titleId.textSize [style.text-align]=jsonData.elements.layout.header.title.textAlign [style.line-height]=jsonData.elements.layout.header.titleId.lineHeight [style.color]=jsonData.elements.layout.header.titleId.color>Index page</div>
+
+</div>
+<br>
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+  <app-dashboard-card>Loading....</app-dashboard-card>
+</div>
+
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+  </div>
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 sticky">
+    <br>
+    <app-add-dashboard>Loading....</app-add-dashboard>
+</div>

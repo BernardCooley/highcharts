@@ -1,0 +1,26 @@
+<br>
+<div class="{{jsonData.bootstrapGrid.panels.periodicDemand.container}}">
+  <div class="row" [style.font-size]=jsonData.elements.periodicDemand.title.textSize [style.color]=jsonData.elements.periodicDemand.title.textColor>
+    {{jsonData.elements.periodicDemand.title.content}}
+  </div>
+  <div class="row" style="background-color: white; width: 100%">
+    <div class="{{jsonData.bootstrapGrid.panels.periodicDemand.value}}">
+    <br>
+      <div class="row" [style.font-size]=jsonData.elements.periodicDemand.value.textSize [style.color]=jsonData.elements.periodicDemand.value.textColor>
+        {{jsonData.elements.periodicDemand.value.content}}
+      </div>
+      <div class="row" [style.font-size]=jsonData.elements.periodicDemand.upDown.textSize [style.color]=jsonData.elements.periodicDemand.upDown.textColor>
+        {{jsonData.elements.periodicDemand.upDown.content}}
+      </div>
+    </div>
+    <div class="{{jsonData.bootstrapGrid.panels.periodicDemand.upDown}}">
+      <div *ngIf="panel4Widget2 == 'spendSave'"><app-spending-saving>Loading...</app-spending-saving></div>
+			<div *ngIf="panel4Widget2 == 'spend'"><app-spend>Loading...</app-spend></div>
+			<div *ngIf="panel4Widget2 == 'compliance'"><app-compliance-graph>Loading...</app-compliance-graph></div>
+			<div *ngIf="panel4Widget2 == 'target'"><app-target-graph>Loading...</app-target-graph></div>
+			<div *ngIf="panel4Widget2 == 'hotel'"><app-hotel-summary-graph>Loading...</app-hotel-summary-graph></div>
+			<div *ngIf="panel4Widget2 == 'trips'"><app-purpose-of-trips>Loading...</app-purpose-of-trips></div>
+			<div *ngIf="panel4Widget2 == 'periodic'"><app-periodic-demand-graph>Loading...</app-periodic-demand-graph></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+<div class={{jsonData.bootstrapGrid.panels.compliance.container}} style="background-color: white; margin: 5px">
+  <div class={{jsonData.bootstrapGrid.panels.compliance.title}}>
+  <br>
+    <div class="row" [style.font-size]=jsonData.elements.compliance.title.textSize [style.color]=jsonData.elements.compliance.title.textColor [style.font-weight]=jsonData.elements.globalStyles.weight>
+      {{jsonData.elements.compliance.title.content}}
+    </div>
+    <br>
+    <div class="row">
+      <div class={{jsonData.bootstrapGrid.panels.compliance.achieved}}>
+        <div class="row" [style.font-size]=jsonData.elements.compliance.achieved.title.textSize [style.color]=jsonData.elements.compliance.achieved.title.textColor>
+          {{jsonData.elements.compliance.achieved.title.content}}
+        </div>
+        <div class="row" [style.font-size]=jsonData.elements.compliance.achieved.value.textSize [style.color]=jsonData.elements.compliance.achieved.value.textColor [style.font-weight]=jsonData.elements.globalStyles.weight>
+          {{jsonData.elements.compliance.achieved.value.content}}
+        </div>
+      </div>
+      <div class={{jsonData.bootstrapGrid.panels.compliance.lostSavings}}>
+        <div class="row" [style.font-size]=jsonData.elements.compliance.lostSavings.title.textSize [style.color]=jsonData.elements.compliance.lostSavings.title.textColor>
+          {{jsonData.elements.compliance.lostSavings.title.content}}
+        </div>
+        <div class="row" [style.font-size]=jsonData.elements.compliance.lostSavings.value.textSize [style.color]=jsonData.elements.compliance.lostSavings.value.textColor [style.font-weight]=jsonData.elements.globalStyles.weight>
+          {{jsonData.elements.compliance.lostSavings.value.content}}
+        </div>
+      </div>
+      <div class={{jsonData.bootstrapGrid.panels.compliance.lostSavings}}></div>
+    </div>
+  </div>
+
+  <div class="{{jsonData.bootstrapGrid.panels.compliance.yoy}}">
+    <br>
+    <br>
+    <div class="row" [style.font-size]=jsonData.elements.compliance.yoy.title.textSize [style.color]=jsonData.elements.compliance.yoy.title.textColor>
+      {{jsonData.elements.compliance.yoy.title.content}}
+    </div>
+    <div class="row" [style.font-size]=jsonData.elements.compliance.yoy.upDown.textSize [style.color]=jsonData.elements.compliance.yoy.upDown.textColor>
+      {{jsonData.elements.compliance.yoy.upDown.content}}
+    </div>
+  </div>
+  <div class="{{jsonData.bootstrapGrid.panels.compliance.widget}}">
+    <div *ngIf="panel2Widget1 == 'spendSave'"><app-spending-saving>Loading...</app-spending-saving></div>
+		<div *ngIf="panel2Widget1 == 'spend'"><app-spend>Loading...</app-spend></div>
+		<div *ngIf="panel2Widget1 == 'compliance'"><app-compliance-graph>Loading...</app-compliance-graph></div>
+		<div *ngIf="panel2Widget1 == 'target'"><app-target-graph>Loading...</app-target-graph></div>
+		<div *ngIf="panel2Widget1 == 'hotel'"><app-hotel-summary-graph>Loading...</app-hotel-summary-graph></div>
+		<div *ngIf="panel2Widget1 == 'trips'"><app-purpose-of-trips>Loading...</app-purpose-of-trips></div>
+		<div *ngIf="panel2Widget1 == 'periodic'"><app-periodic-demand-graph>Loading...</app-periodic-demand-graph></div>
+  </div>
+  <div class={{jsonData.bootstrapGrid.panels.compliance.target.container}}>
+    <div class={{jsonData.bootstrapGrid.panels.compliance.target.title}}>
+    <br>
+    <br>
+      <div class="row" [style.font-size]=jsonData.elements.compliance.target.title.textSize [style.color]=jsonData.elements.compliance.target.title.textColor>
+        {{jsonData.elements.compliance.target.title.content}}
+      </div>
+      <div class="row" [style.font-size]=jsonData.elements.compliance.target.value.textSize [style.color]=jsonData.elements.compliance.target.value.textColor [style.font-weight]=jsonData.elements.globalStyles.weight>
+        {{jsonData.elements.compliance.target.value.content}}
+      </div>
+    </div>
+    <div class="{{jsonData.bootstrapGrid.panels.compliance.target.widget}}">
+    <br>
+      <div *ngIf="panel2Widget2 == 'spendSave'"><app-spending-saving>Loading...</app-spending-saving></div>
+      <div *ngIf="panel2Widget2 == 'spend'"><app-spend>Loading...</app-spend></div>
+      <div *ngIf="panel2Widget2 == 'compliance'"><app-compliance-graph>Loading...</app-compliance-graph></div>
+      <div *ngIf="panel2Widget2 == 'target'"><app-target-graph>Loading...</app-target-graph></div>
+      <div *ngIf="panel2Widget2 == 'hotel'"><app-hotel-summary-graph>Loading...</app-hotel-summary-graph></div>
+      <div *ngIf="panel2Widget2 == 'trips'"><app-purpose-of-trips>Loading...</app-purpose-of-trips></div>
+      <div *ngIf="panel2Widget2 == 'periodic'"><app-periodic-demand-graph>Loading...</app-periodic-demand-graph></div>
+    </div>
+  </div>
+
+</div>
